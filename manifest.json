@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "HKUST Timetable Addon",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Extends the timetable availability",
   "content_scripts": [
 	{

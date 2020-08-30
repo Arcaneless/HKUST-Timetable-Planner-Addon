@@ -1,5 +1,12 @@
 var maxYrs = 4;
 $(document).ready(function() {
+	// check if more than one list
+	var listraw = $('.semester-dropdown li')
+	while (listraw.length > 1) {
+		listraw.eq(listraw.length-1).remove()
+		listraw = $('.semester-dropdown li')
+	}
+
 	// initiaize the list
 	$('.semester-dropdown li a').removeAttr('disabled')
 	var list = $('.semester-dropdown li').clone()
