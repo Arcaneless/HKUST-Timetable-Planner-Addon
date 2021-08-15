@@ -10,5 +10,5 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/upload-artifact@v2
       with:
-        name: HKUST-Timetable-Addon-Release.zip
+        name: HKUST-Timetable-Addon-Release
         path: '.'
