@@ -1,17 +1,22 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "HKUST Timetable Addon",
-  "version": "0.3",
+  "version": "0.5",
   "description": "Extends the timetable availability",
-  "content_scripts": [
-	{
-		"matches": [
-			"https://admlu65.ust.hk/"
-		],
-		"js": ["jquery-3.5.1.min.js", "content-space-style.js"]
-	}
+  "action": {
+    "default_icon": "icon128.png"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "https://admlu65.ust.hk/"
   ],
-  "icons": {
-	"128": "icon128.png"
-  }
+  "content_scripts": [
+    {
+      "matches": [
+        "https://admlu65.ust.hk/"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
