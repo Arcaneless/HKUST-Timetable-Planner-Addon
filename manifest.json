@@ -7,9 +7,6 @@
     "default_icon": "icon128.png"
   },
   "permissions": [],
-  "host_permissions": [
-    "https://admlu65.ust.hk/"
-  ],
   "content_scripts": [
     {
       "matches": [
